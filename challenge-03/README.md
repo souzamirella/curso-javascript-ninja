@@ -163,14 +163,38 @@ método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
 pessoa.apresentacao = ("Olá, eu sou o " + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " anos, " + pessoa.altura + ", " + " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!")
+
 if (pessoa.sexo === 'Feminino') {
     pessoa.apresentacao = ("Olá, eu sou a " + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " anos, " + pessoa.altura + ", " + " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!")
-} else if (pessoa.idade === 1) {
+} 
+
+if (pessoa.idade === 1) {
     pessoa.apresentacao = ("Olá, eu sou a " + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " ano, " + pessoa.altura + ", " + " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!")
-} else if (pessoa.caminhouQuantosMetros === 1) {
+} 
+
+if (pessoa.caminhouQuantosMetros === 1) {
     pessoa.apresentacao = ("Olá, eu sou a " + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " anos, " + pessoa.altura + ", " + " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metro!")
 }
 
 // Agora, apresente-se ;)
 pessoa.apresentacao
 
+// Código atualizado
+
+pessoa.apresentacao = (`Ola, eu sou o ${pessoa.nome} ${pessoa.sobrenome}, tenho ${pessoa.idade} anos, ${pessoa.altura}, meu peso é ${pessoa.peso} e, só hj, eu 
+ja caminhei ${pessoa.caminhouQuantosMetros} metros!`)
+
+if (pessoa.sexo === 'Feminino') {
+    console.log("entrei no if feminino", pessoa.idade)
+    pessoa.apresentacao = pessoa.apresentacao.replace("eu sou o", "eu sou a")
+} 
+
+if (pessoa.idade == 1) {
+    console.log("entrei no if", pessoa.idade)
+    pessoa.apresentacao = pessoa.apresentacao.replace("anos", "ano")
+} 
+
+if (pessoa.caminhouQuantosMetros === 1) {
+    console.log("entrei no if 2", pessoa.caminhouQuantosMetros)
+    pessoa.apresentacao = pessoa.apresentacao.replace("metros", "metro")
+}
