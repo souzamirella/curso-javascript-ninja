@@ -16,7 +16,7 @@ Crie uma função que receba um array como parâmetro, e retorne esse array.
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-rtrn()[2]
+rtrn()[1]
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
