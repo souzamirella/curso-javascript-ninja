@@ -71,7 +71,7 @@ function calculator (x , y){
 Declare uma variável chamada `sum`, e atribua a ela a função `calculator`,
 passando dois números por parâmetro.
 */
-// ?
+var sum = calculator(3,10)
 
 /*
 Sabemos que `sum` agora tem uma função atribuída a ela, que é o retorno de
